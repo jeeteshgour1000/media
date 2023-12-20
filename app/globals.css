@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background: #0A0D21;
+  color: #FFFFFF;
+}
+
+.login-background {
+  background: rgb(8, 23, 101);
+  background: radial-gradient(
+    circle,
+    rgba(8, 23, 90, 1) 0%,
+    rgba(7, 20, 82, 1) 14%,
+    rgba(5, 19, 34, 1) 52%
+  );
+  -webkit-animation: bg-pan-left 8s linear infinite; /* Adjust animation properties */
+  animation: bg-pan-left 8s linear infinite; /* Adjust animation properties */
+}
+
+@-webkit-keyframes bg-pan-left {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@keyframes bg-pan-left {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.logo{-webkit-animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both}
+@-webkit-keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+
+.logo-name {
+  background: linear-gradient(90deg, rgba(215, 16, 103, 1) 10%, rgba(28, 1, 198, 1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Hide the original text color */
+}
+
+
+.login-card {
+  /* Apply animation properties to the .login-card element */
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+}
+
+.react-hot-toast-toast {
+  background-color: #ff5733; /* Your desired background color */
+}
+
+/* Change the text color */
+.react-hot-toast-content {
+  color: #ffffff; /* Your desired text color */
+}
+
+/* CSS */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+  position: relative;
+  text-align: center;
+}
+
+.modal img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Add transitions and styles for close button as needed */
+
+.menu{
+  @media (max-width: 900px) {
+        display: none;
+}
+}
